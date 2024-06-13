@@ -1,53 +1,33 @@
 <html>
-    <head>
-        <title>SneakersHead</title>
-        <style> /*internal css coding*/
-            h1
-            {
-                color: rgb(101, 145, 36);
-            }
-        </style>
-    </head>
+  <head>
+    <title>Bijesh Maharjan</title>
+  </head>
+  <body id="body">
+    <button onclick="changeColor1()">Red</button>
+    <button onclick="changeColor2()">Blue</button>
+    <button onclick="changeColor3()">Green</button>
+    <button onclick="changeColor4()">Remove</button>
 
-        <h1>SneakersHead</h1>
-        <button onclick="Whothis()">Click Me</button>
+    <script>
+      function changeColor1() {
+        body.style.backgroundColor = "red";
+      }
 
+      function changeColor2() {
+        body.style.backgroundColor = "blue";
+      }
 
+      function changeColor3() {
+        body.style.backgroundColor = "green";
+      }
 
+      function changeColor4() {
+        body.style.backgroundColor = null;
+      }
 
-        <script>//internal javascript coding.
-            let x=0,z=0,y=0,a=0,b=0,c=0;
-
-           
-            
-                function Add(num1,num2)
-                {
-                    a=x+y;
-                    console.log("The sum is " + a);
-                }
-                function Sub(num1,num2)
-                {
-                    b=x-y;
-                    console.log("The difference is " + b);
-                }
-                function Mul(num1,num2)
-                {
-                    c=x*y;
-                    console.log("The product is "  + c);    
-                }
-                Add(100,200);
-                Sub(200,100);
-                Mul(10,20);
-
-                function Sayname(name)//array as parameter.
-                {
-                    console.log("The name is: " + name);
-                }
-                Sayname("Bijesh");
-                function Whothis()//button action
-                {
-                    console.log("This is bijesh coding....")
-                }
-        </script>
-    </body>
+      setInterval(function () {
+        console.log("callBack function");
+      }, 2000); //repeats a function.
+    </script>
+  </body>
 </html>
